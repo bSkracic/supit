@@ -1,0 +1,45 @@
+nav {
+  background: black;    
+  display: flex;
+  padding: 15px;
+  position: sticky; /*? should be fixed */
+  
+}
+
+nav div {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  font-weight: bold;
+}
+
+nav span {
+  color: darkgoldenrod;
+}
+
+nav div a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+
+#logo {
+  /* max-width: 50px;*/
+  max-height: 50px; 
+  padding-right: 15px;
+  padding-left: 25px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav div {
+    text-align: center;
+  }
+}
