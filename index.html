@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Algebra</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supit</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <style>
-        html,
-        body {
-            margin: 0;
-            height: 100%;
-            overflow: hidden;
-        }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="navigation">
-        <div>
-            <img id="logo" src="./img/Algebra-logo.png" />
-        </div>
-        <div>
-            <a href="index.html">
-                <span class="glyphicon glyphicon-home"></span> Početna</a>
-        </div>
-        <div>
-            <a href="./about.html">
-                <span class="glyphicon glyphicon-apple"></span> O nama</a>
-        </div>
-        <div>
-            <a href="index.html">
-                <span class="glyphicon glyphicon-info-sign"></span> Novosti</a>
-        </div>
-        <div>
-            <a href="index.html">
-                <span class="glyphicon glyphicon-info-sign"></span> Nastavni plan</a>
-        </div>
-        <div>
-            <a href="index.html">
-                <span class="glyphicon glyphicon-envelope"></span> Kontakt</a>
-        </div>
+      <div>
+        <img id="logo" src="./assets/img/Algebra-logo.png" />
+      </div>
+      <div>
+        <a href="./index.html">
+          <span class="material-icons">home</span> Početna
+        </a>
+      </div>
+      <div>
+        <a href="./about.html">
+          <span class="material-icons">question_answer</span> O nama
+        </a>
+      </div>
+      <div>
+        <a href="./news.html">
+          <span class="material-icons">info</span> Novosti
+        </a>
+      </div>
+      <div>
+        <a href="./curriculum.html">
+          <span class="material-icons">info</span> Nastavni plan
+        </a>
+      </div>
+      <div>
+        <a href="#"> <span class="material-icons">all_inbox</span> Kontakt </a>
+      </div>
     </nav>
-    <div id="video">
-        <video src="./video/typingOnlaptop.mp4" autoplay loop>
-            Your browser does not support video files.
-        </video>
-        <h1>Sample text</h1>
+    <div id="main-video">
+      <video src="./assets/video/typingOnlaptop.mp4" autoplay muted loop>
+        Your browser does not support video files.
+      </video>
+      <p id="text-on-top" style="font-style: bold"></p>
+      <span id="blinking-cursor">&#9646;</span>
     </div>
-</body>
-
+    <!--Modal-->
+    <div id="contact-modal" class="modal-content" hidden>
+      <span class="close">&times;</span>
+      <div class="modal-form">
+        <i class="material-icons modal-mail-icon">email</i>
+        <h3>Kontaktirajte nas</h3>
+        <div>
+          <h4>Puno ime:</h4>
+          <input id="name-input" class="modal-input-sm" type="text" />
+        </div>
+        <div>
+          <h4>Email:</h4>
+          <input
+            id="email-input"
+            class="modal-input-sm"
+            type="email"
+            required
+          />
+        </div>
+        <div>
+          <h4>Vaznost poruke:</h4>
+          <div class="dropdown">
+            <h2 class="dropbtn">Odaberi</h2>
+            <div class="dropdown-content">
+              <a href="#" id="1" class="importance-dropbtn-item">Nije bitno</a>
+              <a href="#" id="2" class="importance-dropbtn-item">Jako bitno</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h4>Vasa poruka</h4>
+          <input id="msg-input" class="modal-input-bg" type="text" />
+        </div>
+        <div>
+          <h4 id="news-letter-label">Primaj newsletter</h4>
+          <input id="newsletter-checkbox" type="checkbox" />
+          <div class="form-submit-cell">
+            <button id="send-form-btn">Posalji</button>
+            <button id="exit-form-btn">Odustani</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Script-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/typing-animation.js"></script>
+  </body>
 </html>

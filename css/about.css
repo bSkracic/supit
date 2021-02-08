@@ -1,0 +1,151 @@
+html {
+  scroll-behavior: smooth;
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+h2 {
+  padding-top: 5rem;
+  color: maroon;
+  font-size: 40px;
+}
+
+#navigation-right {
+  background-color: black;
+  justify-content: center;
+  height: 100%;
+  padding: 15px;
+  animation-name: slide-in;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+}
+
+#navigation-right > nav > div > a {
+  color: darkgoldenrod;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#header-photo {
+  height: 25rem;
+  background-image: url("../assets/img/kampus-iz-zraka-min-1.jpg");
+  background-position: center;
+  animation: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+.checkpoint-container {
+  justify-content: center;
+  animation: fade-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.checkpoint-container > div {
+  text-align: center;
+  font-size: large;
+  padding: 5rem 10rem 5rem 10rem;
+}
+
+.checkpoint-container > h2 > span {
+  font-size: 40px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  column-gap: 2rem;
+  padding: 0rem 5rem 0rem 5rem;
+}
+
+.partners-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.partners-card > img {
+  max-height: 100%;
+  max-width: 100%;
+  align-self: center;
+  max-height: 10rem;
+  max-width: 20rem;
+}
+
+.card > div {
+  padding: 1rem;
+}
+
+.card > h3 {
+  margin-left: 1rem;
+  width: 75%;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.card > h3 > span {
+  color: lightskyblue;
+}
+
+.location-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  column-gap: 2rem;
+}
+
+.location-content {
+  padding: 2rem;
+  text-align: left;
+}
+
+.location-heading > span {
+  color: dodgerblue;
+}
+
+.location-heading {
+  text-align: left;
+  font-weight: bolder;
+}
+
+.map-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+}

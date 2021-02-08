@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f088b7f-fa3e-40d1-8455-227937198484" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/1024px-Cisco_academy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/Algebra-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/EC-Council.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ECDL_advan.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/VUElogo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/auth_training_cntr.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/autodesk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/galerija1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/galerija2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/itil_novo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/kakoDoNas.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/kampus-iz-zraka-min-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ms_novo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/novost1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/novost2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/novost3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/oracleLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/redhatLogo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vm_novo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/zaiskri-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/typingOnlaptop.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video/worldskills.mp4" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1oCWorbqOHYEKdZYOrXwJ5KSEJ0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f088b7f-fa3e-40d1-8455-227937198484" name="Default Changelist" comment="" />
+      <created>1612791238958</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612791238958</updated>
+      <workItem from="1612791242998" duration="576000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
