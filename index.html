@@ -6,8 +6,11 @@
     <title>Supit</title>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
+      integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
+      crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -52,7 +55,9 @@
         </a>
       </div>
       <div>
-        <a href="#"> <span class="material-icons">all_inbox</span> Kontakt </a>
+        <button data-toggle="modal" data-target="#contact-modal">
+          <span class="material-icons">all_inbox</span> Kontakt
+        </button>
       </div>
     </nav>
     <div id="main-video">
@@ -63,7 +68,43 @@
       <span id="blinking-cursor">&#9646;</span>
     </div>
     <!--Modal-->
-    <div id="contact-modal" class="modal-content" hidden>
+    <div
+      class="modal fade"
+      id="contact-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div id="contact-modal" class="modal-content" hidden>
       <span class="close">&times;</span>
       <div class="modal-form">
         <i class="material-icons modal-mail-icon">email</i>
@@ -104,9 +145,8 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--Script-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/typing-animation.js"></script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+.main-container {
+  display: grid;
+  padding: 5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 800px));
+  grid-row-gap: 2rem;
+  grid-column-gap: 2rem;
+  justify-items: center;
+  width: 100%;
+}
+
+main {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+tr:nth-child(2n) {
+  background-color: lightgray;
+}
+
+footer {
+  height: 100px;
+}
+
+table {
+  table-layout: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 50%;
+    table-layout: auto;
+  }
+}
