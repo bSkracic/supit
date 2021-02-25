@@ -3,22 +3,19 @@ $(document).ready(() => {
 
   let subjectList = [];
 
-  // TODO: Transition Animations
-  // TODO: Modal
-
   fetch(`${apiURL}/GetNastavniPlan`)
     .then((response) => response.json())
     .then((data) => {
       $("#subjects-search").autocomplete({
         source: data,
         select: (event, ui) => {
-          $("#subjects-search").val("");
           if (subjectList.every((subject) => subject["id"] != ui.item.value)) {
             fetch(`${apiURL}/GetKolegij/${ui.item.value}`)
               .then((response) => response.json())
               .then((data) => {
                 subjectList.push(data);
                 populateTable();
+                $("#subjects-search").val("");
               });
           }
         },

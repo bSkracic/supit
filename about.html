@@ -9,7 +9,7 @@
     integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" 
     crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+      rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/about.css" />
     </style>
@@ -42,9 +42,12 @@
             </a>
           </div>
           <div>
-            <a href="index.html">
-              <span class="material-icons">all_inbox</span> Kontakt
-            </a>
+            <button
+            data-toggle="modal"
+            data-target="#contact-modal"
+          >
+            <span class="material-icons">all_inbox</span> Kontakt
+          </button>
           </div>
         </nav>
       </div>
@@ -444,5 +447,57 @@
         });
       })
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <div 
+      class="modal fade" 
+      tabindex="-1" 
+      id="contact-modal"
+      data-keyboard="false" 
+      data-backdrop="static"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">
+                  &times;
+              </button>
+              <h4 class="modal-title"> <i class="material-icons modal-mail-icon" style="color: cornflowerblue;">email</i> Kontaktirajte nas</h4>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="name">Puno ime:</label>
+                      <input class="form-control" type="text" id="name" />
+                  </div>
+                  <div class="form-group">
+                      <label for="email">E-mail:</label>
+                      <input class="form-control" type="email" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="importance">Važnost poruke:</label>
+                    <select class="form-control" id="importance">
+                      <option>Visoka</option>
+                      <option>Niska</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Vaša poruka:</label>
+                    <textarea id="message" style="resize: vertical; width: 100%;"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="newsletter">Primaj newsletter:</label>
+                    <input id="newsletter" type="checkbox"/>
+                  </div>              
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="submit" class="btn btn-primary" id="send">Pošalji</button>
+              <button type="button" class="btn btn-danger"
+                      data-dismiss="modal">Odustani</button>
+          </div>
+      </div>
+    </div>
+    <script src="./js/contact-modal.js"></script>
   </body>
 </html>

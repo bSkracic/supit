@@ -6,11 +6,8 @@
     <title>Supit</title>
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css"
-      integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd"
-      crossorigin="anonymous"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -55,7 +52,10 @@
         </a>
       </div>
       <div>
-        <button data-toggle="modal" data-target="#contact-modal">
+        <button
+          data-toggle="modal"
+          data-target="#contact-modal"
+        >
           <span class="material-icons">all_inbox</span> Kontakt
         </button>
       </div>
@@ -68,85 +68,59 @@
       <span id="blinking-cursor">&#9646;</span>
     </div>
     <!--Modal-->
-    <div
-      class="modal fade"
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/typing-animation.js"></script>
+    <script src="js/contact-modal.js"></script>
+    <div 
+      class="modal fade" 
+      tabindex="-1" 
       id="contact-modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
+      data-keyboard="false" 
+      data-backdrop="static"
     >
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
+              <button type="button" class="close" data-dismiss="modal">
+                  &times;
+              </button>
+              <h4 class="modal-title"> <i class="material-icons modal-mail-icon" style="color: cornflowerblue;">email</i> Kontaktirajte nas</h4>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">
+              <form>
+                  <div class="form-group">
+                      <label for="name">Puno ime:</label>
+                      <input class="form-control" type="text" id="name" />
+                  </div>
+                  <div class="form-group">
+                      <label for="email">E-mail:</label>
+                      <input class="form-control" type="email" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="importance">Važnost poruke:</label>
+                    <select class="form-control" id="importance">
+                      <option>Visoka</option>
+                      <option>Niska</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="message">Vaša poruka:</label>
+                    <textarea id="message" style="resize: vertical; width: 100%;"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="newsletter">Primaj newsletter:</label>
+                    <input id="newsletter" type="checkbox"/>
+                  </div>              
+              </form>
+          </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="submit" class="btn btn-primary" id="send">Pošalji</button>
+              <button type="button" class="btn btn-danger"
+                      data-dismiss="modal">Odustani</button>
           </div>
-        </div>
       </div>
     </div>
-
-    <!-- <div id="contact-modal" class="modal-content" hidden>
-      <span class="close">&times;</span>
-      <div class="modal-form">
-        <i class="material-icons modal-mail-icon">email</i>
-        <h3>Kontaktirajte nas</h3>
-        <div>
-          <h4>Puno ime:</h4>
-          <input id="name-input" class="modal-input-sm" type="text" />
-        </div>
-        <div>
-          <h4>Email:</h4>
-          <input
-            id="email-input"
-            class="modal-input-sm"
-            type="email"
-            required
-          />
-        </div>
-        <div>
-          <h4>Vaznost poruke:</h4>
-          <div class="dropdown">
-            <h2 class="dropbtn">Odaberi</h2>
-            <div class="dropdown-content">
-              <a href="#" id="1" class="importance-dropbtn-item">Nije bitno</a>
-              <a href="#" id="2" class="importance-dropbtn-item">Jako bitno</a>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h4>Vasa poruka</h4>
-          <input id="msg-input" class="modal-input-bg" type="text" />
-        </div>
-        <div>
-          <h4 id="news-letter-label">Primaj newsletter</h4>
-          <input id="newsletter-checkbox" type="checkbox" />
-          <div class="form-submit-cell">
-            <button id="send-form-btn">Posalji</button>
-            <button id="exit-form-btn">Odustani</button>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!--Script-->
-    <script src="js/typing-animation.js"></script>
+    <script src="./js/contact-modal.js"></script>
   </body>
 </html>
