@@ -22,6 +22,24 @@ tr:nth-child(2n) {
   background-color: lightgray;
 }
 
+tr {
+  animation: slide-in-left;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.sliding-left {
+  animation: slide-in-left;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.sliding-right {
+  animation: slide-in-right;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
 footer {
   height: 100px;
 }
@@ -35,5 +53,23 @@ table {
   table {
     width: 50%;
     table-layout: auto;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }

@@ -173,12 +173,12 @@ footer {
   justify-content: center;
 }
 
-#photo-gallery > a > img {
+#photo-gallery > div > a > img {
   height: 200px;
   width: 500px;
 }
 
-#photo-gallery > img:hover {
+#photo-gallery > div > a img:hover {
   animation: smooth-zoom-in;
   animation-duration: 0.5s;
   animation-timing-function: ease-in;
@@ -235,11 +235,5 @@ footer {
     flex-direction: row;
     justify-content: center;
     padding: 2rem;
-  }
-
-  #photo-gallery > a {
-  }
-
-  #video-gallery {
   }
 }

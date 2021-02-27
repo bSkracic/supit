@@ -149,3 +149,43 @@ main {
   height: 500px;
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .checkpoint-container {
+    justify-content: center;
+    animation: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+  }
+
+  .checkpoint-container > div {
+    font-size: large;
+  }
+
+  .checkpoint-container > h2 > span {
+    font-size: 40px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 2rem;
+  }
+  /* 
+  #navigation-right {
+    position: sticky;
+    bottom: 0;
+  }
+
+  #navigation-right > nav > div {
+    background-color: burlywood;
+  }
+
+  #navigation-right > nav > div > a {
+    color: darkgoldenrod;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  } */
+}

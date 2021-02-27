@@ -16,7 +16,7 @@ $("#send").on("click", () => {
 
   $.ajax({
     type: "POST",
-    url: "http://www.fulek.com/VUA/SUPIT/ContactUs",
+    url: "https://www.fulek.com/VUA/SUPIT/ContactUs",
     data: body,
     contentType: "application/json; charset=utf-8",
     dataType: "json",
